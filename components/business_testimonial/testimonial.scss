@@ -1,0 +1,71 @@
+$primary: #1842b6;
+$secondary: #26d48c;
+$light: #f8f8f9;
+$dark: #000103;
+
+$font-family-base: "Inter", sans-serif;
+
+$headings-font-family: "Saira", sans-serif;
+
+$body-color: #787878;
+
+$headings-color: $dark;
+
+$headings-font-weight: 600;
+
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 8px;
+
+$border-radius-sm: $border-radius;
+
+$border-radius-lg: $border-radius;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+#business_testimonial {
+  .testimonial-item {
+    background: #e3f0eb;
+  }
+
+  .testimonial-carousel .owl-dots {
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: #c1dad0;
+    border-radius: 15px;
+    transition: 0.5s;
+  }
+
+  .testimonial-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--bs-primary);
+  }
+
+  .testimonial-carousel .owl-item.center {
+    position: relative;
+    z-index: 1;
+  }
+
+  .testimonial-carousel .owl-item .testimonial-item {
+    transition: 0.5s;
+  }
+
+  .testimonial-carousel .owl-item.center .testimonial-item {
+    background: #ffffff !important;
+    box-shadow: 0 0 30px #dddddd;
+  }
+}
+@import "bootstrap/scss/bootstrap";

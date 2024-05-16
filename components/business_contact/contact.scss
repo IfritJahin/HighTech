@@ -1,0 +1,52 @@
+$primary: #1842b6;
+$secondary: #26d48c;
+$light: #f8f8f9;
+$dark: #000103;
+
+$font-family-base: "Inter", sans-serif;
+
+$headings-font-family: "Saira", sans-serif;
+
+$body-color: #787878;
+
+$headings-color: $dark;
+
+$headings-font-weight: 600;
+
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 8px;
+
+$border-radius-sm: $border-radius;
+
+$border-radius-lg: $border-radius;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+#business_contact {
+  .contact-detail::before {
+    position: absolute;
+    content: "";
+    height: 50%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgb(210, 243, 235, 1), rgba(230, 250, 245, 0.3)),
+      url(../../public/img/background.jpg) center center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  .contact-map {
+    background: #26d48c;
+  }
+
+  .contact-form {
+    background: #26d48c;
+  }
+}

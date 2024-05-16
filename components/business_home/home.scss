@@ -1,0 +1,106 @@
+$primary: #1842b6;
+$secondary: #26d48c;
+$light: #f8f8f9;
+$dark: #000103;
+
+$font-family-base: "Inter", sans-serif;
+
+$headings-font-family: "Saira", sans-serif;
+
+$body-color: #787878;
+
+$headings-color: $dark;
+
+$headings-font-weight: 600;
+
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 8px;
+
+$border-radius-sm: $border-radius;
+
+$border-radius-lg: $border-radius;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+#business_home {
+  .carousel-item {
+    position: relative;
+    height: 100vh;
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .carousel-content {
+    text-align: center;
+    max-width: 700px;
+  }
+
+  .carousel-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .carousel-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+
+  .carousel-content a .carousel-content-btn1,
+  .carousel-content a .carousel-content-btn2 {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .carousel-content a .carousel-content-btn1:hover,
+  .carousel-content a .carousel-content-btn2:hover {
+    background-color: var(--bs-secondary);
+    transition: 0.5s;
+  }
+
+  @media (max-width: 992px) {
+    .carousel-content h1 {
+      font-size: 2rem;
+    }
+
+    .carousel-content p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-content h1 {
+      font-size: 1.5rem;
+    }
+
+    .carousel-content p {
+      font-size: 0.875rem;
+    }
+  }
+}
+@import "bootstrap/scss/bootstrap";

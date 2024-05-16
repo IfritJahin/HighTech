@@ -1,0 +1,125 @@
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+$primary: #1842b6;
+$secondary: #26d48c;
+$light: #f8f8f9;
+$dark: #000103;
+
+$font-family-base: "Inter", sans-serif;
+
+$headings-font-family: "Saira", sans-serif;
+
+$body-color: #787878;
+
+$headings-color: $dark;
+
+$headings-font-weight: 600;
+
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 8px;
+
+$border-radius-sm: $border-radius;
+
+$border-radius-lg: $border-radius;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+#business_header {
+  .topbar .top-info {
+    letter-spacing: 1px;
+  }
+
+  .topbar .top-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topbar .top-link a {
+    margin-right: 10px;
+  }
+
+  #note {
+    width: 500px;
+    overflow: hidden;
+  }
+
+  #note small {
+    position: relative;
+    display: inline-block;
+    animation: mymove 5s infinite;
+    animation-timing-function: all;
+  }
+
+  @keyframes mymove {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  /*** Topbar End ***/
+}
+
+#business_header_nav {
+  /*** Navbar Start ***/
+  #nav {
+    .navbar .navbar-nav {
+      padding: 15px 0;
+    }
+
+    .navbar .navbar-nav .nav-link {
+      padding: 10px;
+      color: var(--bs-white);
+      font-size: 18px;
+      outline: none;
+    }
+
+    .navbar .navbar-nav .nav-link:hover,
+    .navbar .navbar-nav .nav-link.active {
+      color: var(--bs-secondary) !important;
+    }
+
+    .navbar .dropdown-toggle::after {
+      border: none;
+      content: "\f107";
+      font-family: "font awesome 5 free";
+      font-weight: 900;
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+
+    @media (min-width: 992px) {
+      .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        transition: 0.5s;
+        opacity: 0;
+      }
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+      transform: rotateX(0deg);
+      visibility: visible;
+      transition: 0.5s;
+      opacity: 1;
+    }
+
+    /*** Navbar End ***/
+  }
+}
+
+/* Your Bootstrap import goes here */
+@import "bootstrap/scss/bootstrap";

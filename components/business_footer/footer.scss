@@ -1,0 +1,51 @@
+$primary: #1842b6;
+$secondary: #26d48c;
+$light: #f8f8f9;
+$dark: #000103;
+
+$font-family-base: "Inter", sans-serif;
+
+$headings-font-family: "Saira", sans-serif;
+
+$body-color: #787878;
+
+$headings-color: $dark;
+
+$headings-font-weight: 600;
+
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 8px;
+
+$border-radius-sm: $border-radius;
+
+$border-radius-lg: $border-radius;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+#business_footer {
+  /*** Footer Start ***/
+
+  .footer .short-link a,
+  .footer .help-link a,
+  .footer .contact-link a {
+    transition: 0.5s;
+  }
+
+  .footer .short-link a:hover,
+  .footer .help-link a:hover,
+  .footer .contact-link a:hover {
+    letter-spacing: 1px;
+  }
+
+  .footer .hightech-link a:hover {
+    background: var(--bs-secondary);
+    border: 0;
+  }
+
+  /*** Footer End ***/
+}
+@import "bootstrap/scss/bootstrap";

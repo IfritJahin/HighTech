@@ -1,0 +1,85 @@
+/*** Services Start ***/
+
+$primary: #1842b6;
+$secondary: #26d48c;
+$light: #f8f8f9;
+$dark: #000103;
+
+$font-family-base: "Inter", sans-serif;
+
+$headings-font-family: "Saira", sans-serif;
+
+$body-color: #787878;
+
+$headings-color: $dark;
+
+$headings-font-weight: 600;
+
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 8px;
+
+$border-radius-sm: $border-radius;
+
+$border-radius-lg: $border-radius;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+#business_service {
+  .services .services-item {
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px 0;
+    position: relative;
+  }
+
+  .services-content::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+    background: rgba(3, 43, 243, 0.8);
+    transition: 0.5s;
+  }
+
+  .services-content::after {
+    top: 0;
+    bottom: auto;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .services-item:hover .services-content::after {
+    height: 100%;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .services-item:hover .services-content-icon {
+    position: relative;
+    z-index: 2;
+  }
+
+  .services-item .services-content-icon i,
+  .services-item .services-content-icon p {
+    transition: 0.5s;
+  }
+
+  .services-item:hover .services-content-icon i {
+    color: var(--bs-secondary) !important;
+  }
+
+  .services-item:hover .services-content-icon p {
+    color: var(--bs-white);
+  }
+
+  /*** Services End ***/
+}
+@import "bootstrap/scss/bootstrap";
